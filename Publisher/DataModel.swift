@@ -12,7 +12,6 @@ import UIKit
 
 class DataModel {
     
-    
     func addData() {
         
         // 為什麼我找不到 firebase() ???

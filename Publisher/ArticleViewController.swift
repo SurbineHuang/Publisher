@@ -26,17 +26,16 @@ class ArticleViewController: UIViewController {
             self.tableView.mj_header?.endRefreshing()
         })
         
-        
+        // 增加 floating buutton
+        // Todo要怎樣連到第二頁？？
         let actionButton = DTZFloatingActionButton()
-                actionButton.handler = {
-                    button in
-                    print("Hi!")
-                }
-                actionButton.isScrollView = true
-                self.view.addSubview(actionButton)
+        actionButton.handler = {
+            button in
+            print("Hi!")
+        }
+        actionButton.isScrollView = true
+        self.view.addSubview(actionButton)
     }
-
-
     
 }
 
@@ -44,14 +43,13 @@ extension ArticleViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 4
+        return 8
 //        return articles.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleTableViewCell", for: indexPath) as? ArticleTableViewCell {
-            
             
             return cell
         }
