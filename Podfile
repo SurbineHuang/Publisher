@@ -11,6 +11,8 @@ target 'Publisher' do
 pod 'Firebase/Analytics'
 # add pods for any other desired Firebase products
 # https://firebase.google.com/docs/ios/setup#available-pods
+pod 'FirebaseFirestore'
 
-
+pod 'MJRefresh'
+pod 'SimpleFloatingActionButton'
 end
