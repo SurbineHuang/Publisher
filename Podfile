@@ -14,5 +14,5 @@ pod 'Firebase/Analytics'
 pod 'FirebaseFirestore'
 
 pod 'MJRefresh'
-pod 'SimpleFloatingActionButton'
+pod 'DTZFloatingActionButton'
 end

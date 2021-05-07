@@ -218,6 +218,7 @@ PODS:
   - BoringSSL-GRPC/Implementation (0.0.7):
     - BoringSSL-GRPC/Interface (= 0.0.7)
   - BoringSSL-GRPC/Interface (0.0.7)
+  - DTZFloatingActionButton (0.4.0)
   - Firebase/Analytics (7.10.0):
     - Firebase/Core
   - Firebase/Core (7.10.0):
@@ -323,6 +324,7 @@ PODS:
   - PromisesObjC (1.2.12)
 
 DEPENDENCIES:
+  - DTZFloatingActionButton
   - Firebase/Analytics
   - FirebaseFirestore
   - MJRefresh
@@ -331,6 +333,7 @@ SPEC REPOS:
   trunk:
     - abseil
     - BoringSSL-GRPC
+    - DTZFloatingActionButton
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
@@ -350,6 +353,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
   BoringSSL-GRPC: 8edf627ee524575e2f8d19d56f068b448eea3879
+  DTZFloatingActionButton: 746febb29e47f9023089cb7bab15da2b1cbbf888
   Firebase: fffddd0bab8677d07376538365faa93ff3889b39
   FirebaseAnalytics: 4641d7ae4220174f6ca5626163ffc5de2e90391e
   FirebaseCore: ec566d917b2195fc2610aeb148dae99f57a788f9
@@ -366,6 +370,6 @@ SPEC CHECKSUMS:
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
 
-PODFILE CHECKSUM: 19e6b09358f6e58f74ce457b320bf797d448b201
+PODFILE CHECKSUM: b6e3f1d10caf2a4b6dc60e9ea678491846463f7a
 
 COCOAPODS: 1.10.1

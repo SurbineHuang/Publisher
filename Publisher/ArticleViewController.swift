@@ -7,6 +7,7 @@
 
 import UIKit
 import MJRefresh
+import DTZFloatingActionButton
 
 class ArticleViewController: UIViewController {
     
@@ -24,9 +25,19 @@ class ArticleViewController: UIViewController {
         self.tableView.mj_header = MJRefreshNormalHeader(refreshingBlock: {
             self.tableView.mj_header?.endRefreshing()
         })
+        
+        
+        let actionButton = DTZFloatingActionButton()
+                actionButton.handler = {
+                    button in
+                    print("Hi!")
+                }
+                actionButton.isScrollView = true
+                self.view.addSubview(actionButton)
     }
 
 
+    
 }
 
 extension ArticleViewController: UITableViewDelegate, UITableViewDataSource {
