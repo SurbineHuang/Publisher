@@ -15,7 +15,6 @@ class ArticleTableViewCell: UITableViewCell {
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -27,14 +26,17 @@ class ArticleTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setData(title: String, name: String, time: String, category: String, content: String) {
+    func setData(title: String, name: String, createdTime: TimeInterval, category: String, content: String) {
+        
+        let date = Date(timeIntervalSince1970: createdTime)
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy.MM.dd HH:mm"
+        let dateString = dateFormatter.string(from: date)
         
         self.titleLabel.text = title
         self.nameLabel.text = name
-        self.timeLabel.text = time
+        self.timeLabel.text = dateString
         self.categoryLabel.text = category
         self.contentLabel.text = content
-        
     }
-
 }

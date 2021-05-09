@@ -17,7 +17,7 @@
 		D4E41FE02644D26000589B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4E41FDF2644D26000589B2F /* Assets.xcassets */; };
 		D4E41FE32644D26000589B2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4E41FE12644D26000589B2F /* LaunchScreen.storyboard */; };
 		D4E41FEC2644DBE600589B2F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4E41FEB2644DBE600589B2F /* GoogleService-Info.plist */; };
-		D4E420132644E94200589B2F /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E420122644E94200589B2F /* DataModel.swift */; };
+		D4E420132644E94200589B2F /* ArticleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E420122644E94200589B2F /* ArticleManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,7 +47,7 @@
 		D4E41FE22644D26000589B2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4E41FE42644D26000589B2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4E41FEB2644DBE600589B2F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		D4E420122644E94200589B2F /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		D4E420122644E94200589B2F /* ArticleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleManager.swift; sourceTree = "<group>"; };
 		ED87A3473C4D245CFF7B6C13 /* Pods_Publisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Publisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -103,9 +103,9 @@
 			children = (
 				D4E41FD62644D25F00589B2F /* AppDelegate.swift */,
 				D4E41FD82644D25F00589B2F /* SceneDelegate.swift */,
-				D4E420122644E94200589B2F /* DataModel.swift */,
-				D41FE1D726451BA800AD5BF2 /* ArticleTableViewCell.swift */,
+				D4E420122644E94200589B2F /* ArticleManager.swift */,
 				D4E41FDA2644D25F00589B2F /* ArticleViewController.swift */,
+				D41FE1D726451BA800AD5BF2 /* ArticleTableViewCell.swift */,
 				D4E41FDC2644D25F00589B2F /* Main.storyboard */,
 				D4E41FDF2644D26000589B2F /* Assets.xcassets */,
 				D4E41FE12644D26000589B2F /* LaunchScreen.storyboard */,
@@ -233,7 +233,7 @@
 			files = (
 				D41FE1D826451BA800AD5BF2 /* ArticleTableViewCell.swift in Sources */,
 				D4E41FDB2644D25F00589B2F /* ArticleViewController.swift in Sources */,
-				D4E420132644E94200589B2F /* DataModel.swift in Sources */,
+				D4E420132644E94200589B2F /* ArticleManager.swift in Sources */,
 				D4E41FD72644D25F00589B2F /* AppDelegate.swift in Sources */,
 				D4E41FD92644D25F00589B2F /* SceneDelegate.swift in Sources */,
 			);
