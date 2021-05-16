@@ -21,7 +21,7 @@ class ArticleViewController: UIViewController {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
-        // reload 畫面
+        // 下拉新增 refresh 畫面
         self.tableView.mj_header = MJRefreshNormalHeader(refreshingBlock: {
             self.tableView.mj_header?.endRefreshing()
             self.loadArticles()
@@ -30,11 +30,14 @@ class ArticleViewController: UIViewController {
         // 增加 floating buutton
         let actionButton = DTZFloatingActionButton()
         actionButton.handler = { button in
-            print("Hi!")
-            // TODO: 開啟第二頁
+            self.performSegue(withIdentifier: "AddArticle", sender: self)
         }
         actionButton.isScrollView = true
         self.view.addSubview(actionButton)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         self.loadArticles()
     }

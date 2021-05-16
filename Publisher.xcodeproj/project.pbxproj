@@ -10,6 +10,7 @@
 		D41FE1D22644F1D300AD5BF2 /* Pods_Publisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED87A3473C4D245CFF7B6C13 /* Pods_Publisher.framework */; };
 		D41FE1D32644F1D300AD5BF2 /* Pods_Publisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ED87A3473C4D245CFF7B6C13 /* Pods_Publisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D41FE1D826451BA800AD5BF2 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41FE1D726451BA800AD5BF2 /* ArticleTableViewCell.swift */; };
+		D44B149A2651640500E7366D /* AddArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B14992651640500E7366D /* AddArticleViewController.swift */; };
 		D4E41FD72644D25F00589B2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E41FD62644D25F00589B2F /* AppDelegate.swift */; };
 		D4E41FD92644D25F00589B2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E41FD82644D25F00589B2F /* SceneDelegate.swift */; };
 		D4E41FDB2644D25F00589B2F /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E41FDA2644D25F00589B2F /* ArticleViewController.swift */; };
@@ -38,6 +39,7 @@
 		425C24FCBEDF1ED79BCCBCDD /* Pods-Publisher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Publisher.debug.xcconfig"; path = "Target Support Files/Pods-Publisher/Pods-Publisher.debug.xcconfig"; sourceTree = "<group>"; };
 		B87F10E60A0333330B990F60 /* Pods-Publisher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Publisher.release.xcconfig"; path = "Target Support Files/Pods-Publisher/Pods-Publisher.release.xcconfig"; sourceTree = "<group>"; };
 		D41FE1D726451BA800AD5BF2 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		D44B14992651640500E7366D /* AddArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArticleViewController.swift; sourceTree = "<group>"; };
 		D4E41FD32644D25F00589B2F /* Publisher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Publisher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4E41FD62644D25F00589B2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4E41FD82644D25F00589B2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D44B149B2651640D00E7366D /* List */ = {
+			isa = PBXGroup;
+			children = (
+				D4E41FDA2644D25F00589B2F /* ArticleViewController.swift */,
+				D41FE1D726451BA800AD5BF2 /* ArticleTableViewCell.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		D44B149C2651641200E7366D /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				D44B14992651640500E7366D /* AddArticleViewController.swift */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		D44B149D2651642800E7366D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D4E420122644E94200589B2F /* ArticleManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		D4E41FCA2644D25F00589B2F = {
 			isa = PBXGroup;
 			children = (
@@ -103,9 +130,9 @@
 			children = (
 				D4E41FD62644D25F00589B2F /* AppDelegate.swift */,
 				D4E41FD82644D25F00589B2F /* SceneDelegate.swift */,
-				D4E420122644E94200589B2F /* ArticleManager.swift */,
-				D4E41FDA2644D25F00589B2F /* ArticleViewController.swift */,
-				D41FE1D726451BA800AD5BF2 /* ArticleTableViewCell.swift */,
+				D44B149C2651641200E7366D /* Add */,
+				D44B149B2651640D00E7366D /* List */,
+				D44B149D2651642800E7366D /* Manager */,
 				D4E41FDC2644D25F00589B2F /* Main.storyboard */,
 				D4E41FDF2644D26000589B2F /* Assets.xcassets */,
 				D4E41FE12644D26000589B2F /* LaunchScreen.storyboard */,
@@ -236,6 +263,7 @@
 				D4E420132644E94200589B2F /* ArticleManager.swift in Sources */,
 				D4E41FD72644D25F00589B2F /* AppDelegate.swift in Sources */,
 				D4E41FD92644D25F00589B2F /* SceneDelegate.swift in Sources */,
+				D44B149A2651640500E7366D /* AddArticleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
